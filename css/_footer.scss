@@ -1,0 +1,15 @@
+footer {
+  background-color: $very-dark-black-blue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 15vh;
+  padding: 2vh 0 0 10vw;
+  line-height: 2rem;
+  border-top-right-radius: 100px;
+  color: $grayish-blue;
+  // h4
+  h4 {
+    margin-bottom: 1rem;
+  }
+  // end h4
+}

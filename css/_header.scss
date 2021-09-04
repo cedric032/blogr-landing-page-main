@@ -1,0 +1,51 @@
+header {
+  background-image: url(../images/bg-pattern-intro.svg),
+    linear-gradient(
+      90deg,
+      $very-light-red-background 0%,
+      $light-red-background 35%
+    );
+  background-position: -35vw -50vh;
+  height: 25vh;
+  border-bottom-left-radius: 100px;
+  // nav
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    // div
+    div {
+      display: flex;
+      align-items: center;
+      // li
+      li {
+        margin-left: 1rem;
+        position: relative;
+        padding-left: 2vw;
+
+        &::after {
+          content: url(../images/icon-arrow-light.svg);
+          position: absolute;
+          top: 0;
+          right: -1rem;
+        }
+      }
+      // end li
+    }
+    //  end div
+  }
+  li {
+    display: inline-block;
+
+    & li {
+      display: none;
+    }
+  }
+  // end nav
+  > div {
+    background-color: red;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 5rem;
+  }
+}

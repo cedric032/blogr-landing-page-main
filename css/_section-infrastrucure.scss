@@ -1,0 +1,25 @@
+.section-infrastrucure {
+  background: no-repeat url(../images/bg-pattern-circles.svg),
+    linear-gradient(
+      90deg,
+      $very-dark-gray-blue 0%,
+      $very-dark-desaturated-blue 85% 100%
+    );
+  background-position: -50% 80%;
+  height: 16.5vh;
+  border-radius: 0 100px 0 100px;
+  position: relative;
+  //   img
+  img {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+  }
+  //   end img
+  //   div
+  div {
+    margin-left: 50%;
+    background-color: red;
+  }
+  //   end div
+}

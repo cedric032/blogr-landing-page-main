@@ -1,0 +1,16 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_font.scss";
+@import "_header.scss";
+@import "_section-designed-for-future.scss";
+@import "_section-infrastrucure.scss";
+@import "_section-laptop.scss";
+@import "_footer.scss";
+
+body {
+  font-size: 16px;
+  color: $white;
+}
+.btn {
+  padding: 2rem;
+}
