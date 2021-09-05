@@ -9,12 +9,6 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
@@ -141,7 +135,7 @@ a {
 header {
   background-image: url(../images/bg-pattern-intro.svg), linear-gradient(90deg, #ff8f70 0%, #ff3d54 35%);
   background-position: -35vw -50vh;
-  height: 25vh;
+  height: 15vh;
   border-bottom-left-radius: 100px;
 }
 
@@ -149,6 +143,7 @@ header nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  display: none;
 }
 
 header nav div {
@@ -181,21 +176,45 @@ header > div {
   background-color: red;
   text-align: center;
   line-height: 2rem;
-  margin-top: 5rem;
+  margin-top: 5%;
+  display: none;
+}
+
+.section-designed-for-future {
+  background-color: white;
+  position: relative;
+}
+
+.section-designed-for-future h2 {
+  background-color: red;
+}
+
+.section-designed-for-future__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.illustration-editor-desktop {
+  position: relative;
+  right: -30%;
 }
 
 .section-infrastrucure {
   background: no-repeat url(../images/bg-pattern-circles.svg), linear-gradient(90deg, #2c2d3f 0%, #3f4164 85% 100%);
   background-position: -50% 80%;
-  height: 16.5vh;
+  height: 15vh;
   border-radius: 0 100px 0 100px;
   position: relative;
 }
 
 .section-infrastrucure img {
   position: absolute;
-  top: -20%;
-  left: 10%;
+  height: 100%;
+  top: -15%;
+  left: 5%;
 }
 
 .section-infrastrucure div {
@@ -204,10 +223,10 @@ header > div {
 }
 
 footer {
+  height: 15vh;
   background-color: #25252d;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 15vh;
   padding: 2vh 0 0 10vw;
   line-height: 2rem;
   border-top-right-radius: 100px;
@@ -221,6 +240,20 @@ footer h4 {
 body {
   font-size: 16px;
   color: white;
+  min-height: 100vh;
+}
+
+section {
+  line-height: 1.7rem;
+}
+
+section h2,
+section h3 {
+  color: #1f3f5b;
+}
+
+section p {
+  color: #97979b;
 }
 
 .btn {

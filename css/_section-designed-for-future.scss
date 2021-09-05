@@ -1,2 +1,18 @@
 .section-designed-for-future {
+  background-color: $white;
+  position: relative;
+  h2 {
+    background-color: red;
+  }
+}
+.section-designed-for-future__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  align-items: center;
+  padding-left: 10%;
+}
+.illustration-editor-desktop {
+  position: relative;
+  right: -30%;
 }
