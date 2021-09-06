@@ -1,4 +1,9 @@
 .section-infrastrucure {
+  height: 25vh;
+  position: relative;
+  border-radius: 0 100px 0 100px;
+  padding-left: 45%;
+  color: $white;
   background: no-repeat url(../images/bg-pattern-circles.svg),
     linear-gradient(
       90deg,
@@ -6,21 +11,20 @@
       $very-dark-desaturated-blue 85% 100%
     );
   background-position: -50% 80%;
-  height: 15vh;
-  border-radius: 0 100px 0 100px;
-  position: relative;
   //   img
   img {
     position: absolute;
-    height: 100%;
+    height: 140%;
     top: -15%;
-    left: 5%;
+    left: 10%;
   }
   //   end img
-  //   div
-  div {
-    margin-left: 50%;
-    background-color: red;
-  }
-  //   end div
+}
+.section-infrastrucure__flex-container {
+  // display: flex;
+  // flex-direction: column;
+  // background-color: red;
+  // height: fit-content;
+  // overflow-wrap: break-word;
+  width: 50%;
 }

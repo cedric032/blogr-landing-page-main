@@ -2,7 +2,9 @@
   background-color: $white;
   position: relative;
   h2 {
-    background-color: red;
+    position: absolute;
+    top: 15%;
+    right: 50%;
   }
 }
 .section-designed-for-future__grid {
