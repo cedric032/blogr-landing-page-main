@@ -18,8 +18,14 @@ ul {
 }
 section {
   line-height: 1.7rem;
+  padding: 5vw;
   h3 {
     color: $very-dark-blue;
+    margin-bottom: 1rem;
+    font-size: larger;
+  }
+  h3:nth-of-type(2) {
+    margin-top: 3rem;
   }
 }
 section p {

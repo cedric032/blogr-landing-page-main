@@ -1,20 +1,22 @@
 .section-designed-for-future {
   background-color: $white;
   position: relative;
+
   h2 {
     position: absolute;
     top: 15%;
     right: 50%;
+    color: $very-dark-blue;
+    font-weight: 500;
   }
 }
 .section-designed-for-future__grid {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 0fr;
+  grid-template-columns: 50% 50%;
   align-items: center;
-  padding-left: 10%;
 }
-.illustration-editor-desktop {
+.section-designed-for-future__illustration-editor-desktop {
   position: relative;
-  right: -30%;
+  right: -10%;
 }
