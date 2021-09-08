@@ -1,34 +1,41 @@
 .section-infrastrucure {
   height: 25vh;
   position: relative;
+  z-index: 0;
   border-radius: 0 100px 0 100px;
   padding: 0;
-  padding-left: 50%;
+  // padding-left: 50%;
   color: $white;
-  background: no-repeat url(../images/bg-pattern-circles.svg),
-    linear-gradient(
-      90deg,
-      $very-dark-gray-blue 0%,
-      $very-dark-desaturated-blue 85% 100%
-    );
-  background-size: auto 250%, cover;
-  background-position: 0vh 80vw;
+  background: linear-gradient(
+    90deg,
+    $very-dark-gray-blue 0%,
+    $very-dark-desaturated-blue 85% 100%
+  );
+
+  // background-size: auto 250%, cover;
+  // background-position: 0vh 80vw;
 }
-.section-infrastrucure__flex-container {
-  width: 80%;
-  display: flex;
+.section-infrastrucur-container-bg-pattern-circles {
+  position: absolute;
   height: inherit;
-  flex-direction: column;
-  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.section-infrastrucure__bg-pattern-circles {
+  position: relative;
+  top: -45vh;
+  left: -25vw;
+  z-index: -1;
+  width: 15vw;
+  background-color: red;
+}
+.section-infrastrucure__container-text {
+  margin-left: 50%;
 }
 .section-infrastrucure__illustration-phones {
   position: absolute;
   height: 140%;
   top: -15%;
   left: 10%;
-}
-.section-infrastrucure__bg-pattern-circles {
-  position: absolute;
-  top: 0%;
-  right: 0%;
+  z-index: 1;
 }
