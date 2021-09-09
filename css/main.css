@@ -201,8 +201,11 @@ header li li {
 
 .section-designed-for-future h2 {
   position: absolute;
-  top: 15%;
-  right: 50%;
+  top: 18%;
+  left: 0;
+  right: 0;
+  width: max-content;
+  margin: 0 auto 0 auto;
   color: #1f3f5b;
   font-weight: 700;
   font-size: xx-large;
@@ -213,6 +216,10 @@ header li li {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
+}
+
+.section-designed-for-future__grid-col-1 {
+  padding-top: 35%;
 }
 
 .section-designed-for-future__illustration-editor-desktop {
