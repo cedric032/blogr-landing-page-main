@@ -1,68 +1,70 @@
-header {
-  background: url(../images/bg-pattern-intro.svg),
-    linear-gradient(
-      90deg,
-      $very-light-red-background 0%,
-      $light-red-background 80% 100%
-    );
-  background-size: 135%;
-  background-repeat: no-repeat;
-  background-position: top 55% left 0%;
-  height: 30vh;
-  width: 100vw;
-  border-bottom-left-radius: 100px;
+@media (min-width: 375px) {
+}
+@media (min-width: 1440px) {
+  header {
+    background: url(../images/bg-pattern-intro.svg),
+      linear-gradient(
+        90deg,
+        $very-light-red-background 0%,
+        $light-red-background 80% 100%
+      );
+    background-size: 135%;
+    background-repeat: no-repeat;
+    background-position: top 55% left 0%;
+    height: 30vh;
+    width: 100vw;
+    border-bottom-left-radius: 100px;
 
-  // nav
-  nav {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    // gap: 20em;
-    li {
-      margin-left: 3rem;
-      position: relative;
-      top: 0;
-      & :nth-of-type(1)::after {
-        content: url("../images/icon-arrow-light.svg");
-        position: absolute;
+    // nav
+    nav {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      li {
+        margin-left: 3rem;
+        position: relative;
         top: 0;
-        right: -1rem;
+        & :nth-of-type(1)::after {
+          content: url("../images/icon-arrow-light.svg");
+          position: absolute;
+          top: 0;
+          right: -1rem;
+        }
+      }
+      // end li
+    }
+    li {
+      display: inline-block;
+
+      & li {
+        display: none;
       }
     }
-    // end li
+    // end nav
   }
-  li {
-    display: inline-block;
+  .header__nav-container {
+    display: flex;
+    align-items: center;
+    padding: 5% 0 0 10%;
+  }
+  .header__promo-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    // gap: 15%;
+    padding-top: 5vh;
+    height: 5vh;
 
-    & li {
-      display: none;
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
     }
-  }
-  // end nav
-}
-.header__nav-container {
-  display: flex;
-  align-items: center;
-  padding: 5% 0 0 10%;
-}
-.header__promo-container {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  // gap: 15%;
-  padding-top: 5vh;
-  height: 5vh;
 
-  h1 {
-    font-weight: 700;
-    font-size: 3rem;
-    // margin-bottom: 1%;
-  }
+    p {
+      // margin-bottom: 2%;
+    }
 
-  p {
-    // margin-bottom: 2%;
-  }
-
-  a {
+    a {
+    }
   }
 }
